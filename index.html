@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>shopping cart</title>
+  </head>
+  <body>
+    <nav class="navbar__primary">
+      <div class="navbar__primary--left_boxes">
+        <div class="country_box">
+          <svg
+            class="icon icon--gb"
+            xmlns="http://www.w3.org/2000/svg"
+            height="480"
+            width="640"
+            viewBox="0 0 640 480"
+          >
+            <defs>
+              <clipPath id="a">
+                <path fill-opacity=".67" d="M-85.333 0h682.67v512h-682.67z" />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+              <g stroke-width="1pt">
+                <path fill="#006" d="M-256 0H768.02v512.01H-256z" />
+                <path
+                  d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z"
+                  fill="#fff"
+                />
+                <path
+                  d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z"
+                  fill="#fff"
+                />
+                <path
+                  d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z"
+                  fill="#c00"
+                />
+              </g>
+            </g>
+          </svg>
+          Uk (£) &nbsp;
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon--down_arrow"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+        <a href="#" class="location_box">
+          <svg
+            class="icon icon--location"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          &nbsp;find a store
+        </a>
+      </div>
+      <div class="navbar__primary--right_boxes">
+        <a href="#" class="login_signup">
+          <svg
+            class="icon icon--login_signup"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75"
+            />
+          </svg>
+          login/signup
+        </a>
+        <a href="#" class="orders">my orders</a>
+        <a href="#" class="cart">
+          <svg
+            class="icon icon--basket"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+            />
+          </svg>
+          basket
+        </a>
+      </div>
+    </nav>
+    <nav class="navbar__secondary">
+      <div class="navbar__secondary--top_boxes">
+        <img src="./images/only-at-smyths-icon.svg" alt="" class="main_logo" />
+        <div class="search_wrapper">
+          <input
+            type="text"
+            name="search_box"
+            class="search_box"
+            placeholder="I'm looking for..."
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon icon--search"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="navbar__secondary--bottom_boxes">
+        <div>Toys</div>
+        <div>Baby Room</div>
+        <div>Outdoor</div>
+        <div>Gaming</div>
+        <div>Gift Finder</div>
+      </div>
+    </nav>
+    <nav class="navbar__tertiary">
+      <a href="#">free delivery on orders over £20*</a
+      ><a href="#"> free click & collect within 2 hours</a>
+      <a href="#">order by 10pm for next day delivery*</a>
+    </nav>
+    <main>
+      <div class="path">
+        <a href="#" class="path--home">Home</a>
+        <span class="slash">&nbsp;/&nbsp;</span>
+        <a href="#" class="path--basket">Your Basket</a>
+      </div>
+      <p class="your_basket">Your Basket</p>
+      <div class="money_box">
+        <div class="money_box--left_boxes">
+          <div class="prod_card">
+            <div class="prod_card__photo">
+              <img src="./images/001.jpg" />
+            </div>
+            <div class="prod_card__details">
+              <div class="prod_card__title">
+                Magnetic Tiles 40-Piece Building Set
+              </div>
+              <div class="prod_card__id">Ref:230550</div>
+              <div class="prod_card__options">
+                <div class="opt">
+                  <svg
+                    class="icon icon--check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Click & Collect
+                </div>
+                <div class="opt">
+                  <svg
+                    class="icon icon--check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Home Delivery
+                </div>
+              </div>
+              <div class="prod_card__price_and_quantity">
+                <div class="qty">Qty :</div>
+                <div class="capsule">
+                  <div class="capsule__minus">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="icon icon--capsule"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.25 12a.75.75 0 0 1 .75-.75h14a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <input type="text" name="" class="quantity_input" value="1" />
+                  <div class="capsule__plus">
+                    <svg
+                      class="icon icon--capsule"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="price_prod">£19.99</div>
+                <div class="price_calculated">£39.98</div>
+              </div>
+            </div>
+            <div class="x_button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon--x"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="prod_card">
+            <div class="prod_card__photo">
+              <img src="./images/002.jpg" />
+            </div>
+            <div class="prod_card__details">
+              <div class="prod_card__title">
+                Magna-Tiles Clear Colours 32 Magnetic Pieces
+              </div>
+              <div class="prod_card__id">Ref:195291</div>
+              <div class="prod_card__options">
+                <div class="opt">
+                  <svg
+                    class="icon icon--check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Click & Collect
+                </div>
+                <div class="opt">
+                  <svg
+                    class="icon icon--check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Home Delivery
+                </div>
+              </div>
+              <div class="prod_card__price_and_quantity">
+                <div class="qty">Qty :</div>
+                <div class="capsule">
+                  <div class="capsule__minus">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="icon icon--capsule"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.25 12a.75.75 0 0 1 .75-.75h14a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <input type="text" name="" class="quantity_input" value="1" />
+                  <div class="capsule__plus">
+                    <svg
+                      class="icon icon--capsule"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="price_prod">£34.99</div>
+                <div class="price_calculated">£34.99</div>
+              </div>
+            </div>
+            <div class="x_button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon--x"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="prod_card">
+            <div class="prod_card__photo">
+              <img src="./images/001.jpg" />
+            </div>
+            <div class="prod_card__details">
+              <div class="prod_card__title">
+                Magnetic Tiles 100-Piece Building Set
+              </div>
+              <div class="prod_card__id">Ref:230551</div>
+              <div class="prod_card__options">
+                <div class="opt">
+                  <svg
+                    class="icon icon--check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Click & Collect
+                </div>
+                <div class="opt">
+                  <svg
+                    class="icon icon--check"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 12.75 6 6 9-13.5"
+                    />
+                  </svg>
+                  Home Delivery
+                </div>
+              </div>
+              <div class="prod_card__price_and_quantity">
+                <div class="qty">Qty :</div>
+                <div class="capsule">
+                  <div class="capsule__minus">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="icon icon--capsule"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.25 12a.75.75 0 0 1 .75-.75h14a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <input type="text" name="" class="quantity_input" value="1" />
+                  <div class="capsule__plus">
+                    <svg
+                      class="icon icon--capsule"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="price_prod">£49.99</div>
+                <div class="price_calculated">£49.99</div>
+              </div>
+            </div>
+            <div class="x_button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon--x"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="money_box--right_boxes">
+          <div class="checkout_card">
+            <div class="radio_buttons">
+              <div class="radio__home_delivery--wrapper">
+                <input
+                  type="radio"
+                  name="checkout"
+                  class="radio__home_delivery"
+                />
+                <label for="home_delivery">Home Delivery</label>
+              </div>
+              <div class="radio__click_collect--wrapper">
+                <input
+                  type="radio"
+                  name="checkout"
+                  class="radio__click_collect"
+                />
+                <label for="click_collect">click & collect</label>
+              </div>
+            </div>
+            <p class="cost__subtotal">
+              <span>subtotal:</span><span>£94.97</span>
+            </p>
+            <p class="cost__delivery">
+              <span>Delivery:</span><span>£0.00</span>
+            </p>
+            <p class="cost__total"><span>Total:</span><span>£94.97</span></p>
+            <a href="#" class="checkout_button">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
